@@ -1,0 +1,22 @@
+课堂练习:
+编写一个手机类(Phone)
+属性:name,price,CPU,screen_size
+方法:开机(startup),关机(shutdown)
+    打电话(call),发信息(send_msg)
+并编写测试代码
+
+作业:
+    1.编写一个账户类(Account)
+        属性:账号(acct_no),户名(acct_name),
+            开户日期(reg_date),类型(acct_tpe),储蓄卡还是贷记卡
+            状态(acct_status,挂失,正常,冻结,注销)
+            余额(balance)
+        
+        方法:存款(diposite)
+            取款(draw)
+            冻结(freeze),解冻(unfreeze)
+            挂失(report_loss),解除挂失(relieve_loss)
+            修改账户信息(modify_acct_info)
+    
+    2.编写测试代码
+

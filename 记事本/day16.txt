@@ -1,0 +1,39 @@
+练习1:
+    写一个函数.要求把一个字典组成的列表(学生信息列表),写入文件si.txt中
+    要求:
+        内容是每个学生的信息写在一行内,每个信息之间用都好分隔开
+    如:
+        def save_to_file(L):
+            ....
+        L = [dict(name='xiaozhang',age=20,score=100)
+            , dict(name='xiaoli',age=18,score=98)]
+        save_to_file(L)
+        文件si.txt的内容是:
+        xiaozhang,20,100
+        xiaoli,18,98
+
+练习2:
+    print()  函数是如何实现的?
+      能否自己实现一个myprint函数与內建功能相同
+    如:
+        print(*args,sep=' ',end='\n',file=sys.stdout,
+               flush=False)
+
+练习3:
+    修改学生信息管理程序,
+        在加入一个保存的功能:
+          10)保存信息到文件(si.txt)
+        实现保存当前的所有数据
+
+练习4:
+    写程序,实现复制文件的功能:
+        ru:
+        请输入源文件: /home/tarena/day16.txt
+        请输入源文件:/home/tarena/abc.txt中
+        输出:
+            复制文件成功
+        要求:
+            1.要考虑文件关闭的问题
+            2.要考虑大文件的问题
+            3.要能复制二进制文件
+        mycopy.py

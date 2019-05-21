@@ -1,0 +1,58 @@
+exercize1:
+    写一个生成器函数myeven(begin,end),用来生成从begin开始到end结束的所有偶数(不包括end)
+    如:
+        def myeven(begin,end):
+            ....此处自己实现
+        
+        for x in myeven(1,10):
+            print(x)  #打印2,4,6,8
+        L = [x ** 2 for x in myeven(4,9)]
+        print(L)   #[16,36,64]
+
+exercize2:
+    已知有列表:
+        L = [2,3,5,7]
+    1.写一个生成器函数,让此函数能够动态提供数据,数据为原列表的数字的平方加1
+    2.写一个生成器表达式,让此表达式能够动态提供数据,数据为原列表的数据的平方加1
+    3.写一个列表,此列表的数据为原列表L的数字的平方加1
+
+exercise3:
+    试写一个生成器函数 myfilter, 要求此函数与系统内奸的filter 函数功能完全一致
+    如:
+        def myfilter(fn,iterable):
+            .....
+        
+        for y in myfilter(lambda x:x%2==0,range(10)):
+            print(y)
+
+exercise4:
+    L = [2,3,5,7]
+    A = [x*10 for x in L]
+    it = iter(A)
+    print(next(it))
+    L[1] = 33
+    print(next(it))
+exercise5:
+    试用自己的方法实现myenumerate,功能与enumerate完全相同
+    def myenumerate(iterable,start=0):
+        .....#此处自己实现
+    L = [3,5,8,10]
+    for i,v in myenumerate(L):
+        print('索引为',i,'的元组值为',v)
+
+exercise6:
+    1.写一个生成器函数myxrange(start,stop,step)来生成一系列整数:
+    要求:
+        myxrange的功能与range功能完全相同
+        不允许调用range函数和列表
+    用自己写的myxrange结合生成器表达式求1~10内的奇数和平方和
+        print(sum(x for x in myxrange(1,10)if x % 2))
+    
+    2.自己写一个文件(si.txt)内容如下:
+      写入内容如下:
+        xiaohang,20,100
+        xiaoli,18,98
+        ziaowang,19,80
+    为学生信息管理系统添加一个功能
+        9)从文件中读取学生数据(si.txt)
+    读取学生信息并加载到内存中

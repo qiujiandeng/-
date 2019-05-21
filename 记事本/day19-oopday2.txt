@@ -1,0 +1,51 @@
+课堂练习:在MyList 类中,重载+,*运算符
+    L1 = MyList([1,2,3])
+    L2 = MyList([4,5,6])
+    L1 + L2 ==> [1,2,3,4,5,6]
+    L1 * 2 ==> MyList([1,2,3,1,2,3])
+    
+calss exercise:
+    在MyList类中,重载> , < , == , != 比较运算符
+    等于:data属性元素个数相等
+        并且相同位置上的值相等
+    大小比较:
+            [1,2,4]  >  [1,2,3]
+            [1,2,3,4]  > [1,2,3]
+            [1,2[3]]  >  [1,2,3,4]
+calss exercise:
+    1.编写一个汽车租赁程序,包含汽车类(Car),客户类(Customer),
+      租车店类(CarStore),各个类包含的属性和方法有:
+    Car类:
+        属性:
+            car_id   车辆id号
+            name     车辆名称
+            is_lend  是否出租(状态)
+            price    每天单价
+            start_date  起租日期
+            end_date    租赁终止日期
+        方法:
+            __str__()
+
+    Customer类:
+        属性:
+            cust_id    客户编号
+            cust_name  客户姓名
+            tel_no     客户电话
+        方法:
+            __str__()  
+
+    CarStore类:
+        属性:
+            cars        所有车辆列表  
+            customers   所有客户列表
+        方法:
+            __load_cars()   加载所有车辆信息
+            __load_customers()   加载所有客户信息
+            print_cars_info()    打印所有车辆信息
+            find_car()           查找车辆
+            add_car()            添加车辆
+            del_car()            删除汽车
+            lend()               租车
+            back()               还车
+
+    2.实现上述类,并编写测试代码

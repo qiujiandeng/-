@@ -1,0 +1,3 @@
+xiaohang,20,100
+xiaoli,18,98
+ziaowang,19,80

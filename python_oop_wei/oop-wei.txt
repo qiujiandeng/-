@@ -1,0 +1,68 @@
+1.写一个类Bictcle(自行车)类,
+  有run方法,调用时显示骑行历程km
+    class Bictcle:
+        def run(self,km):
+            print("自行车骑行了",km,'公里')
+
+2.在写一个类EBicycle(电动自行车)类,在Bicycle类的自出上添加电池点亮volume属性,
+  有两个方法:
+        1.file_charge(self,vol) 用来充电,同事显示当前点亮,
+          当电量耗尽时,则调用Bicycle的run方法骑行
+        class EBicycle(Bictcle):
+    
+    b = Bicycle()
+    b.run(10) #自行车骑行了10公里
+    e = EBicycle(5)
+    e.run(10)#电动骑行了10公里
+    e.run(100)#电动骑行了40公里,自行车骑行了60公里
+    b.fill_charge(10)
+    b.run
+
+dey19:  
+练习1:
+  把学生管理系统中的学生信息:姓名,年龄,成绩
+  改为室友属性,不让此类以外的函数访问,来实现封装
+  (需要修改Student类)
+
+练习2:
+  定一个类,Fibonacci 
+  实现迭代器协议,此类的对象可以作为可迭代对象生成相应的斐波那契数列
+   1  1  2  3  5  8  ....
+   class Fibonacci:
+      def __init__(self,n):
+        ...
+      ...
+    实现如下操作:
+    for x in Fibonacci(10):
+        print(x)
+    L = [x for x in fibonacci(30)]
+    print(sum(Fibonacci(25)))
+      (需要实现迭代器协议)
+    可以用一个类实现,也可以用两个类实现
+    class Fibonacci:
+      def __init__(self,n):
+        ...
+      
+      def __iter__(self):
+        ....
+      
+      def __next__(self):
+        ......
+
+练习:
+  实现有序集合 OrderSet  类 能实现两个集合的交集 & ,并集 | , 补集 - ,对称集 ^
+  ==, != , in / not in 集合操作
+  (要求集合内用 list 存储数据)
+  s1 = OrderSet([1,2,3,4])
+  s2 = OrderSet([3,4,5])
+  print(s1 & s2 )  #OrderSet([3,4])
+  print(s1 |s2 )  #OrderSet([1,2,3,4,5])
+  print(s1 ^ s2 )  #OrderSet([1,2,5])
+  if OrderSet([1,2,3])  != OrderSet([1,2,3,4]):
+      print("不相等")
+  if s2 == OrderSet(3,4,5):
+      print("s2 和 OrderSet(3,4,5)相等")
+  if 2 in s1:
+      print("2 in s1")
+  
+  
